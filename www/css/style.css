@@ -1,0 +1,979 @@
+/* Empty. Add your own CSS if you like */
+/*.separator_line{
+    width:95%;
+    height:1px;
+    border-bottom: solid 1px #ddd;
+    margin-left:auto;
+    margin-right:auto;
+}
+.row{
+    padding:0;
+}
+.album_header{
+    width:95%;
+    border-bottom: solid 2px #ddd;
+    margin-left:auto;
+    margin-right:auto;
+}
+*/
+
+.special-playlists {
+    z-index: 2;
+    position: relative;
+    padding-top: 0% !important;
+    height: 80px;
+    width: 80px !important;
+}
+.special-playlists .box-left {
+    left: 2%;
+     right: 0% !important; 
+}
+.artwork-mosaic {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    position: relative;
+    background-color: #ddd;
+}
+
+.artwork-mosaic .miniature {
+    display: inline-block;
+    width: 50% !important; 
+    height: 50%;
+    padding: 0;
+    margin: 0;
+}
+play-bar {
+    position: absolute;
+    bottom: 0px !important;
+    height: 50px !important;
+    z-index: 10;
+    display: table;
+    table-layout: fixed; 
+    width: 100%;  
+}
+
+play-bar .image {
+     position: none !important;
+     top: 0px !important; 
+     left: 0px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 0px !important;
+    display: table;
+    table-layout: fixed;
+}
+
+
+
+
+
+/***********************************************/
+/***********************************************/
+/********* Header and nav color theme  *********/
+/***********************************************/
+/***********************************************/
+
+
+
+
+              /************* header *************/
+        .bar.bar-positive {
+          background-image: none !important;
+          border: none !important;
+          background-color:#3B5998 !important;
+        }
+              /************* Tab nav *************/
+        .tabs-positive > .tabs,
+        .tabs.tabs-positive {
+          background-color: #3B5998 !important;
+              border-color: #3B5998 !important;
+              height: 55px !important;
+              background-image: linear-gradient(0deg,#3B5998,#3B5998 50%,transparent 50%) !important;
+        }
+
+         .tabs-striped .tabs {
+          border-color: transparent !important; /*#445569*/
+        }
+
+        .tab-item.tab-item-active,
+        .tab-item.active,
+        .tab-item.activated {
+          color: #ffffff !important;
+        }
+
+
+        .tab-item {
+          /*color: #9ea1a8 !important;*/
+        }
+
+        
+
+        .tab-item.middle {
+          background-color: #519ec8 !important;
+          border-radius: 7px !important;
+          color: #3F51B5 !important;
+          opacity: 1 !important;
+        }
+        .tabs-striped .tabs .tab-item.middle {
+          border-radius: 0 !important;
+        }
+
+        .tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated {
+            margin-top: 1px !important;
+            border-width: 0px 0px 3px 0px !important;
+            border-style: solid !important;
+        }
+
+
+
+
+
+
+
+
+
+/***********************************************/
+/***********************************************/
+/*************     Dark theme     **************/
+/***********************************************/
+/***********************************************/
+              .body-dark .pane,
+              .body-dark .view {
+                background-color: #212121;
+              }
+              .body-dark .modal {
+                background-color: rgba(0, 0, 0, 0.92);
+              }
+              .body-dark .modal-backdrop-bg {
+                background-color: #36465d;
+                opacity: 0;
+              }
+              @media (min-width: 680px) {
+                .body-dark .modal {
+                  background-color: transparent;
+                }
+                .body-dark .active .modal-backdrop-bg {
+                  background-color: #36465d;
+                  opacity: 0.98;
+                }
+
+              }
+                    /************* List item *************/
+
+              .body-dark .item:first-child{
+                border-top: none !important;
+              }
+              .body-dark .item,
+              .body-dark .item-complex .item-content {
+                background: #212121;
+                  color: #fff;
+                  text-align: left;
+                  border-color: #212121;
+              }
+              .body-dark .item *,
+              .body-dark .item-complex .item-content * {
+                color: #ffffff;
+              }
+              .body-dark .item.active,
+              .body-dark .item.activated,
+              .body-dark .item-complex.active .item-content,
+              .body-dark .item-complex.activated .item-content,
+              .body-dark .item .item-content.active,
+              .body-dark .item .item-content.activated {
+               /* border-color: #445569;
+                background-color: #445569;*/
+              }
+                    /************* List item card  *************/
+              .body-dark .card .item,
+              .body-dark .item.item-input {
+                background-color: #ffffff;
+                color: #444;
+              }
+              .body-dark .card {
+                margin: 0 0 20px 0;
+                 background-color: #445569;
+                color: #444 !important;
+              }
+
+
+
+
+
+                  /************* profile *************/
+
+
+            .body-dark .profile-banner {
+              background-image: url(http://ioniconf.com/img/bg.jpg);
+              background-position: center center;
+              background-repeat: no-repeat;
+              padding: 20px 0;
+            }
+
+
+            .body-dark .profile-banner img {
+              display: block;
+              margin: auto;
+              border: 5px solid #FFF;
+              width: 200px;
+              height: 200px;
+              border-radius: 25px;
+              margin-bottom: 30px;
+            }
+                  /************* profile *************/
+            .body-dark .profile-banner {
+              background-image: url(http://ioniconf.com/img/bg.jpg);
+              background-position: center center;
+              background-repeat: no-repeat;
+              padding: 20px 0;
+            }
+            .body-dark .profile-banner img {
+              display: block;
+              margin: auto;
+              border: 5px solid #FFF;
+              width: 200px;
+              height: 200px;
+              border-radius: 25px;
+              margin-bottom: 30px;
+            }
+                 /************* popover *************/
+          .body-dark .popover-button {
+            color: #eeeeee;
+          }
+
+          .body-dark play-bar {   
+              background-color: #000 !important;
+              background-image: linear-gradient(0deg,#000,#000 50%,transparent 50%)!important;
+              border-top: 2px solid rgba(154, 154, 154, 0.27);
+          }
+          .body-dark popover-list{
+              background-color: #212121 !important;
+              padding: 8px;   
+          }
+          .body-dark .popup h3 h4 p span {
+                color: #444  !important;
+          }
+
+ .body-dark play-bar .song .title {
+    font-size: 16px;
+       color: #fff  !important;
+}
+ .body-dark play-bar .song .artist {
+    color: #fff  !important;
+}
+/***********************************************/
+/***********************************************/
+/************* Light theme        **************/
+/***********************************************/
+/***********************************************/
+            .body-light .pane,
+            .body-light .view {
+              background-color: #ffffff;
+            }
+            .body-light .modal {
+              background-color: rgba(54, 70, 93, 0.95);
+            }
+            .body-light .modal-backdrop-bg {
+              background-color: #36465d;
+              opacity: 0;
+            }
+            @media (min-width: 680px) {
+              .body-light .modal {
+                background-color: transparent;
+              }
+              .body-light .active .modal-backdrop-bg {
+                background-color: #36465d;
+                opacity: 0.98;
+              }
+
+            }
+                  /************* List item *************/
+
+            .body-light .item:first-child{
+              border-top: none !important;
+            }
+            .body-light .item,
+            .body-light .item-complex .item-content {
+              background: #ffffff;
+                color: #444444;
+                text-align: left;
+                border-color: #ffffff;
+            }
+            .body-light .item *,
+            .body-light .item-complex .item-content * {
+              color: #444444;
+            }
+            .body-light .item.active,
+            .body-light .item.activated,
+            .body-light .item-complex.active .item-content,
+            .body-light .item-complex.activated .item-content,
+            .body-light .item .item-content.active,
+            .body-light .item .item-content.activated {
+              border-color: #ffffff;
+              background-color: #ffffff;
+            }
+                  /************* List item card  *************/
+            .body-light .card .item,
+            .body-light .item.item-input {
+              background-color: #ffffff;
+              color: #444;
+            }
+            .body-light .card {
+              margin: 0 0 20px 0;
+               background-color: #ffffff;
+              color: #444 !important;
+            }
+                  /************* profile *************/
+            .body-light .profile-banner {
+              background-image: url(http://ioniconf.com/img/bg.jpg);
+              background-position: center center;
+              background-repeat: no-repeat;
+              padding: 20px 0;
+            }
+            .body-light .profile-banner img {
+              display: block;
+              margin: auto;
+              border: 5px solid #FFF;
+              width: 200px;
+              height: 200px;
+              border-radius: 25px;
+              margin-bottom: 30px;
+            }
+                 /************* popover *************/
+          .body-light .popover-button {
+            color: #444444;
+          }
+
+          .body-light play-bar {   
+              background-color: #fff !important;
+              background-image: linear-gradient(0deg,#ddd,#ddd 50%,transparent 50%)!important;
+              border-top: 2px solid rgba(204, 204, 204, 0.27);
+          }
+          .body-light popover-list{
+              background-color: #fff !important;
+              padding: 8px;   
+          }
+
+
+   .body-light play-bar .song .title {
+    font-size: 16px;
+       color: #444  !important;
+}
+ .body-light play-bar .song .artist {
+    color: #444  !important;
+}
+/*********************************/
+/*********************************/
+/********  bg header  ***   ******/
+/*********************************
+/*********************************/
+
+
+button.customIcon i:before {
+    font-size: 52px !important;
+}
+
+
+.spacer{
+  margin:15px;
+}
+.spacer-mid{
+  margin:30px;
+}
+.spacer-header{
+  margin:48px;
+}
+
+
+
+.item-song, .item-song .item-content, .item-song-left, .item-song-left .item-content {
+    height: 70px !important;
+}
+
+
+
+
+/*remove border bottom in ion header*/
+.bar-header {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+
+
+
+
+
+/*********************************/
+/*********************************/
+
+.detail-box{
+background: #000;
+    min-height: 287px;
+    overflow: hidden;
+    position: relative;
+}
+.detail-bg{
+    /* background-color: black !important; */
+    /* transform: scale(2.9); */
+    height: 287px;
+    width: 100%;
+    text-align: center;
+/*    background: url('http://i0.kym-cdn.com/photos/images/original/000/051/726/17-i-lol.jpg?1318992465') no-repeat center;*/
+     
+/*background: url('../data/artworks/grey_artwork.jpg') no-repeat center;  */ 
+    background-size: cover;
+  transform: scale(2.9);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+
+      -webkit-filter: blur(13px);
+   /* -webkit-animation: fadein linear 1.0s;*/
+    position: absolute;
+    left: 0;
+/*background-size:cover;
+    -webkit-filter: blur(61px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+  background-color: black !important;*/
+   
+
+ 
+}
+@-webkit-keyframes fadein {
+/*   0% {    -webkit-filter: opacity(0%) blur(13px);}
+  50% { -webkit-filter: opacity(50%)  blur(13px);}
+ 100% {  -webkit-filter: opacity(50%) blur(13px);}
+*/
+/*   0% {    -webkit-filter: blur(60px);}
+  50% { -webkit-filter: blur(40px);}
+  70% { -webkit-filter: blur(30px);}
+  850% { -webkit-filter: blur(20px);}
+ 100% {  -webkit-filter: blur(13);}*/
+
+}
+
+
+.detail-header{
+      z-index: 2;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 20px 5% 0 5%;
+}
+.detail-header h4{
+    color: #fff !important;
+}
+
+
+
+
+
+/*********************************/
+/*********************************/
+/************* Player  **************/
+/********************************
+/********************************/
+
+.player-box{
+background: #000;
+    min-height: 100%;
+    height: auto; /*height: 800px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+
+.player-bg{
+    /* background-color: black !important; */
+    /* transform: scale(2.9); */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+/*    background: url('http://i0.kym-cdn.com/photos/images/original/000/051/726/17-i-lol.jpg?1318992465') no-repeat center;*/
+     
+/*background: url('../data/artworks/grey_artwork.jpg') no-repeat center;  */ 
+    background-size: cover;
+  transform: scale(2.9);
+ -webkit-transform: scale(2.9);
+  -moz-transform:    scale(2.9);
+  -ms-transform:     scale(2.9);
+  -o-transform:      scale(2.9);
+  transform:         scale(2.9);
+
+
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+    -webkit-filter: blur(13px);
+   /* -webkit-animation: fadein linear 1.0s;*/
+
+
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+/*background-size:cover;
+    -webkit-filter: blur(61px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+  background-color: black !important;*/
+   
+}
+.player-card{
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 40px;
+}
+.player-artwork{
+  padding: 20px 40px 0px 40px;
+  
+}
+.player-img-artwork{
+   width: 100%;
+}
+.player-title{
+  text-align: center;
+}
+
+.player-footer{
+     background-image: linear-gradient(0deg,#ddd,#ddd 0%,transparent 0%) !important; 
+     background-image:transparent;
+    /* background-position: top; */
+    height: 200px !important;
+    background-color: transparent !important;
+}
+
+.player-time{
+  position: relative;
+    z-index: 2;
+  /*      background-color: #DD1616;*/
+    height: 30px;
+    width: 100%;
+}
+.player-box .song-title{
+
+}
+.player-box .artist-title{
+
+}
+
+.player-current-time{
+    left:3px;
+      position: absolute;
+    color: #fff;
+    opacity: .7;
+    bottom: 3px;
+    font-size: 18px;
+    text-shadow: 0 0 1px #000;
+}
+
+.player-total-duration{
+    right:3px;
+      position: absolute;
+    color: #fff;
+    opacity: .7;
+    bottom: 3px;
+    font-size: 18px;
+    text-shadow: 0 0 1px #000;
+}
+.player-play{
+      font-size: 60px;
+      color:#fff;
+}
+.player-seeker{
+    background-color: transparent !important;
+    color: transparent !important;
+    text-align: left !important;
+    border-color: transparent !important;
+    width: 100%;
+}
+
+
+.vertical-block{
+    
+    vertical-align: middle;
+  
+    width: 100%;
+    height: 100%;
+}
+.clear-footer{
+  clear: both;
+    display: table-cell;
+  vertical-align: middle;
+}
+.vertical-centering-container{
+position: relative;
+  /*   height: 100%; */
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin-top: 10px;
+}
+.vertical-centering-content{
+position: relative;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+}
+
+
+
+.control-bar{
+position: relative;
+    width: 100%;
+}
+.control-box{
+    position: relative;
+    margin: auto;
+    height: 40px;
+    width: 180px;
+}
+.play{
+    position: absolute;
+    top: 0;
+    left: 69px;
+}
+.pause{
+    position: absolute;
+    top: 0;
+    left: 72px;
+}
+
+.play,.play:before{
+  font-size:42px !important;
+  text-shadow: 0 0 1px #000;
+  color: #ffffff !important;
+  padding-top: 2px;
+}
+.puase,.puase:before{
+  font-size:50px !important;
+  text-shadow: 0 0 1px #000;
+  color: #ffffff !important;
+}
+
+.backward{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+      font-size:40px !important;
+  text-shadow: 0 0 1px #000;
+    color: #ffffff !important;
+}
+
+.forward{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+ font-size:40px !important;
+  text-shadow: 0 0 1px #000;
+    color: #ffffff !important;
+}
+
+
+.loop{
+      position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0 0 1px #000;
+}
+
+.shuffle{
+  position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 25px;
+     color: #ffffff;
+     text-shadow: 0 0 1px #000;
+}
+
+
+.heart{
+  color: #ffffff;
+
+}
+
+
+
+/**********************************/
+/**********************************/
+/************* Misc **************/
+/**********************************/
+/**********************************/
+
+
+
+
+
+              .body-dark .list-divider{ /*divider*/
+                background-color: #303030 !important;
+              }
+              .body-light .list-divider{ /*divider*/
+                background-color: #dddddd !important;
+              }
+
+
+              .body-dark .playlist-button-bg{
+                background-color: #303030 !important;
+              }
+              .body-dark .playlist-button-font{
+                    font-size: 14px !important;
+              }
+
+              .body-light .playlist-button-bg{
+                background-color: #dddddd !important;
+              }
+              .body-light .playlist-button-font{
+                    font-size: 14px !important;
+              }
+
+
+
+
+
+
+
+
+/**********************************/
+/**********************************/
+/************* Misc **************/
+/**********************************/
+/**********************************/
+
+            .bar.transparent {
+              background-color: transparent;
+              border: none;
+            }
+
+            .bar.transparent h1 {
+              color: white;
+            }
+
+
+            /* Remove header padding */
+            .has-no-header {
+              top: 0px !important;
+            }
+            /* Remove footer padding */
+            .has-no-footer {
+                 bottom: 0px !important; 
+            }
+          
+
+         
+/**********************************/
+/**********************************/
+/********** not use  **************/
+/**********************************/
+/**********************************/
+
+.button.idpro-button-full {
+  height: 100px;
+}
+i.icon-right.idpro-icon-large {
+  font-size: 30px;
+}
+.tile-box{
+  position: relative;
+    display: block;
+    background: #303030;
+    padding: 0px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 80px;
+} 
+.tile-icon-box{
+    color: rgba(0, 0, 0, 0.2);
+    right: 10px;
+     bottom: 0px; 
+    position: absolute;
+    z-index: 1;
+}
+.tile-icon{
+    font-size: 80px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}/************* not use  **************/
+
+
+
+
+
+
+
+/**********************************/
+/**********************************/
+/************* Font **************/
+/**********************************/
+/**********************************/
+                    .body-dark {
+                      font-family: -apple-system, "Helvetica Neue", "Segoe WP", sans-serif !important;
+                      color: #ffffff;
+                      text-align: center;
+                    }
+                          /************* font *************/
+                    .body-dark h1,
+                    .body-dark h2,
+                    .body-dark h3,
+                    .body-dark h4,
+                    .body-dark h5,
+                    .body-dark h6,
+                    .body-dark .h1,
+                    .body-dark .h2,
+                    .body-dark .h3,
+                    .body-dark .h4,
+                    .body-dark .h5,
+                    .body-dark .h6 {
+                      color: #ffffff;
+                    }
+                    /**********************************/
+                    /**********************************/
+                    .body-light {
+                      font-family: -apple-system, "Helvetica Neue", "Segoe WP", sans-serif !important;
+                      color: #444444;
+                      text-align: center;
+                    }
+                          /************* font *************/
+                    .body-light h1,
+                    .body-light h2,
+                    .body-light h3,
+                    .body-light h4,
+                    .body-light h5,
+                    .body-light h6,
+                    .body-light .h1,
+                    .body-light .h2,
+                    .body-light .h3,
+                    .body-light .h4,
+                    .body-light .h5,
+                    .body-light .h6 {
+                      color: #444444;
+                    }
+
+                    .player-title h4 ,
+                    .player-title p {    
+                      color: #fff !important;
+                    }
+
+
+
+
+
+
+/**********************************/
+/**********************************/
+/************* toggle **************/
+/**********************************/
+/**********************************/
+
+.body-tumblr .toggle input:checked + .track {
+  background-color: #529ecc;
+  border-color: #529ecc;
+}
+
+.body-tumblr .toggle .track {
+  background-color: #858d98;
+  border-color: #858d98;
+}
+
+.body-tumblr .toggle .handle,
+.body-tumblr .toggle input:checked + .track .handle {
+  background-color: #36465d;
+  border-color: #36465d;
+  box-shadow: none;
+}
+
+.body-tumblr.platform-android .toggle .track {
+  background-color: #1c232b;
+  border-color: #858d98;
+}
+
+.body-tumblr.platform-android .toggle .handle {
+  background-color: #ffffff;
+  border-color: #36465d;
+  box-shadow: none;
+}
+
+.body-tumblr.platform-android .toggle input:checked + .track {
+  background-color: rgba(81, 158, 200, 0.25);
+}
+
+.body-tumblr.platform-android .toggle input:checked + .track .handle {
+  background-color: #519ec8;
+}
+
+/**********************************/
+/**********************************/
+/************* Regenerate **************/
+/**********************************/
+/**********************************/
+.popup-title {
+    color: #fff !important;
+}
+.popup-sub-title {
+    color: #fff !important;
+}
+
+.popover-backdrop.active {
+    background-color: rgba(0,0,0,.4)!important;
+}
+
+
+.backdrop {
+    background-color: rgba(0,0,0,.7)!important;
+}
+.popup-container .popup {
+    border-radius: 5PX !important;
+    background-color: #444 !important; 
+}.popup-head {
+    padding: 15px 10px  !important; 
+     border-bottom: transparent  !important; 
+}
+
+
+
+.button:hover {
+    /*color: #FFF !important; */
+}
+
+
+
+
+.body-light .popover {
+    background-color: #fff !important; 
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) !important; 
+}
+.body-dark .popover {
+    background-color: #212121 !important; 
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) !important; 
+}
+
+.ion-sad{font-size:80px !important;}
+
+.ion-android-search{font-size:80px !important;}
+
+.ion-ios-musical-notes{font-size:80px !important;}
+
+.two-line{
+  padding-top: 20px;
+}
+
+  .object-visible{
+     visibility: visible;
+  }
+    .object-hidden{
+     visibility: hidden;
+  }
