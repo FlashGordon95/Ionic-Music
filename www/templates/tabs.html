@@ -1,0 +1,43 @@
+<play-bar ></play-bar>
+<ion-tabs class="tabs-striped  tabs-positive " >
+<!-- tabs-icon-only -->
+  <!-- Customised Song Tab -->
+   <ion-tab icon-off="ion-music-note" icon-on="ion-music-note" href="#/tab/songs">
+    <ion-nav-view  name="tab-songs"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Artists Tab -->
+  <ion-tab  icon-off="ion-person-stalker" icon-on="ion-person-stalker" href="#/tab/artists">
+    <ion-nav-view name="tab-artists"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Search Tab -->
+<!--   <ion-tab  icon-off="ion-ios-search" icon-on="ion-ios-search-strong" href="#/tab/search">
+    <ion-nav-view name="tab-search"></ion-nav-view>
+  </ion-tab> -->
+
+
+  <!-- Playlists Tab -->
+  <ion-tab  icon-off="ion-ios-albums" icon-on="ion-ios-albums" href="#/tab/playlists">
+    <ion-nav-view name="tab-playlists"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Settings Tab -->
+<!--   <ion-tab  icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/settings">
+    <ion-nav-view name="tab-settings"></ion-nav-view>
+  </ion-tab> -->
+
+  <!-- Fav Tab -->
+  <ion-tab  icon-off="ion-ios-heart" icon-on="ion-ios-heart" href="#/tab/favorites">
+    <ion-nav-view cache-view="false" name="tab-fav"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Folder Tab -->
+  <ion-tab  icon-off="ion-android-folder" icon-on="ion-android-folder-open" href="#/tab/manage-directories">
+    <ion-nav-view name="tab-folder"></ion-nav-view>
+  </ion-tab>
+
+
+
+</ion-tabs>

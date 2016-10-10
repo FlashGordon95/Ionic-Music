@@ -1,0 +1,61 @@
+<play-bar ></play-bar>
+<ion-view view-title="Titles">
+<!-- <ion-header-bar align-title="left"  class="transparent" id="ben-header"> -->
+    <ion-header-bar align-title="left"  class="transparent" >
+      <div class="buttons">
+            <button class="button icon ion-android-arrow-back  button-clear"  ng-click="$ionicGoBack()"></button>
+      </div>
+      <h1 class="title"></h1>
+      <div class="buttons">
+        <button class="button icon ion-android-search  button-clear" ui-sref="search"></button>
+      </div>
+    </ion-header-bar>
+
+  <!--   <ion-header-bar align-title="left" class="bar-positive">
+      <h1 class="title">Artists</h1>
+      <div class="buttons">
+        <button class="button icon ion-android-search  button-clear"></button>
+      </div>
+    </ion-header-bar> -->
+<!-- 
+<ion-content scroll="true" has-bouncing="true" >
+<p>Artist name:{{artistName}}</p>
+<p>Artist id:{{artistId}}</p>
+<BR><BR><BR> -->
+<!--  <ion-content id="myFunction" class="has-no-header" scroll="true" has-bouncing="true"> -->
+ <ion-content class="has-no-header" scroll="true" has-bouncing="true">
+    <div class="detail-box">
+       <!--  <div class="detail-bg" > -->
+        <div class="detail-bg" ng-style="{'background':'url('+artistArtworkUrl+')'}">
+
+<!--  ng-style="{'background-image':'url({{artistArtworkUrl}})'}"   -->
+        </div>
+        <div class="spacer-mid"></div>
+        <div class="detail-header">
+               <img src="{{artistArtworkUrl}}" style="width: 100px; height: auto">
+                <h4>{{artistName}}</h4>
+                <!-- <p>Artist id:{{artistId}}</p> -->
+        </div>
+    </div>
+
+
+<div class="list">
+	<div collection-repeat="title in titles" item-height="title.isSeparator ? 37 : 59">
+		<div ng-if="!title.isSeparator" class="item item-song one-line" ng-click="playTitle(title)">
+
+			<img  ng-if="title.first" ng-src="{{::miniaturesPath}}{{title.artwork}}" />
+			<h2>{{title.name}}</h2>
+
+			<button class="button button-icon ion-more" ng-click="showPopover($event,title)"></button>
+
+		</div>
+
+		<div ng-if="title.isSeparator" class="item item-divider album-header">
+			<h2>{{title.name}}</h2>
+		</div>
+
+	</div>
+</div>
+<div style="height: 350px"></div>
+</ion-content>
+</ion-view>

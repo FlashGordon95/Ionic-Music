@@ -1,0 +1,46 @@
+<ion-view view-title="Artists">
+    <ion-header-bar align-title="left" class="bar-positive">
+      <div class="buttons">
+            <button class="button icon ion-navicon  button-clear" nav-direction="forward" ui-sref="settings">
+              
+            </button>
+         
+      </div>
+      <h1 class="title">Artists</h1>
+      <div class="buttons">
+        <button class="button icon ion-ios-search button-clear" ui-sref="search"></button>
+      </div>
+    </ion-header-bar>
+
+
+    <ion-content has-bouncing="true">
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="refreshArtists()"></ion-refresher>
+        <div style="height: 25px"></div>
+          <div ng-hide="artists.length" >
+          
+            <div style="height: 50px"></div>
+            <div  class="">
+                    <a class="button button-icon button-large ion-sad button-clear"></a>
+                    <div style="height: 30px"></div>
+                <h4 class="dark">No item found</h4>
+                <h5 class="dark ng-binding">Go to folder tab > click + button to add music folder</h5>
+            </div>
+        
+        </div>      
+        <div class="list">
+
+            <a collection-repeat="artist in artists" class="item item-thumbnail-left two-line" ng-href="#/artists/{{artist.id}}/artwork/{{artist.artwork}}">
+    <!--           
+              ng-href="#/tab/artists/{{artist.id}}" -->
+                <img ng-src="{{::miniaturesPath}}{{artist.artwork}}">
+                <h2>{{artist.name}}</h2>
+                <p><b>{{artist.nbAlbums}}</b> album<span ng-if="artist.nbAlbums>1">s</span>, <b>{{artist.nbTitles}}</b> song<span ng-if="artist.nbTitles>1">s</span><span ng-if="artist.like>0"></span></p>
+                <!-- , <b>{{artist.like}}</b> <i class="icon ion-ios-heart"></i> -->
+            </a>
+
+        </div>
+
+  
+        <div style="height: 80px"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,63 @@
+<ion-view view-title="Manage Directories">
+
+<ion-header-bar class="bar-darkgrey" style="">
+      <div class="buttons">
+            <button class="button icon ion-android-arrow-back  button-clear"  ng-click="$ionicGoBack()"></button>
+      </div>
+      <h1 class="title">Music directories</h1>
+ <button class="button button-icon balanced ion-ios-plus-outline" ng-click="openModal()"></button>
+    </ion-header-bar>
+
+
+
+
+
+
+        <ion-content  scroll="true" class="has-header" has-bouncing="true">
+        
+ <div style="height: 50px"></div>
+
+
+        <ion-list >
+
+        
+            <ion-item class="item-icon-right" >
+                /dir/path1
+                
+                <ion-option-button class="button-assertive">
+                    Remove
+                </ion-option-button>
+                <ion-option-button class="button-balanced"
+                    >
+                    Scan
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" >
+                /dir/path2
+               
+                <ion-option-button class="button-assertive">
+                    Remove
+                </ion-option-button>
+                <ion-option-button class="button-balanced"
+                    >
+                    Scan
+                </ion-option-button>
+            </ion-item>
+             <ion-item class="item-icon-right" >
+                /dir/path3
+              
+                <ion-option-button class="button-assertive">
+                    Remove
+                </ion-option-button>
+                <ion-option-button class="button-balanced"
+                    >
+                    Scan
+                </ion-option-button>
+            </ion-item>           
+
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>
+

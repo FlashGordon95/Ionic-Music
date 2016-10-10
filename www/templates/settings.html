@@ -1,0 +1,49 @@
+<ion-view view-title="Settings">
+    <ion-header-bar align-title="left"  class="transparent">
+        <div class="buttons">
+            <button class="button icon ion-android-close button-clear"  nav-direction="back" ng-click="ChangeColor(); $ionicGoBack()">
+       
+            </button>
+         
+      </div>  
+      
+<!--       <div class="buttons">
+        <button class="button icon ion-android-search  button-clear" ui-sref="search"></button>       
+      </div> -->
+    </ion-header-bar>
+
+    <ion-content  scroll="false" class="has-no-header" >
+ <div style="height: 100px"></div>
+        <div class="list">
+            <ion-toggle ng-model="config.showStatusBar" ng-change="toggleStatusBar()" toggle-class="toggle-balanced">Show Statusbar</ion-toggle>
+            <ion-toggle ng-model="config.goToPlayer" ng-change="toggleGoToPlayer()" toggle-class="toggle-balanced">Go to player on play</ion-toggle>
+ <!--            <a class="item   item-icon-right" ng-href="#/tab/settings/manage-directories">
+                
+                Manage Music Directories
+                <i class="icon ion-ios-arrow-right"></i>
+            </a> -->
+             <div class="item item-icon-right" ng-click="findArtistNames()">
+                <!-- <i class="icon  ion-person-stalker"></i> -->
+                Update artist names online
+                <ion-spinner ng-show="isSearchingArtists" icon="spiral"  class="spinner-energized">></ion-spinner>
+            </div>
+           
+            <div class="item item-icon-right" ng-click="findMissingArtworks()">
+               <!--  <i class="icon ion-ios-albums"></i> -->
+                Update album covers online
+                <ion-spinner ng-show="isSearchingArtworks" icon="spiral"  class="spinner-energized"></ion-spinner>
+              
+            </div>
+
+            <div class="item item-icon-right" ng-click="clearAllDatabase()">
+                <!-- <i class="icon ion-android-delete "></i> -->
+                Clear all data
+            </div>
+             <div class="item item-icon-right" >
+                <!-- <i class="icon ion-android-delete "></i> -->
+                Version 1.0.1
+            </div>     
+
+        </div>
+    </ion-content>
+</ion-view>

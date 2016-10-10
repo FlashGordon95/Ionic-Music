@@ -1,0 +1,60 @@
+<!-- Template with data -->
+
+<ion-view view-title="Artists">
+    <ion-header-bar class="bar-darkgrey" style="">
+      <h1 class="title">ARTISTS</h1>
+    </ion-header-bar>
+    <div class="greyliner"></div>
+
+    <ion-content  has-bouncing="true" class="darkbg light-bg dark-border">
+ 		<ion-refresher pulling-text="Pull to refresh" on-refresh="refreshArtists()"></ion-refresher>
+
+
+            <div class="list">
+		            <a  collection-repeat="artist in artists" class="item item-thumbnail-left" ng-href="#/tab/me_artist_detail" ng-href="#/tab/artists/{{artist.id}}">
+		                <img ng-src="{{::miniaturesPath}}{{artist.artwork}}">
+		                <h2>{{artist.name}}</h2>
+		                <p><b>{{artist.nbAlbums}}</b> album<span ng-if="artist.nbAlbums>1">s</span>, <b>{{artist.nbTitles}}</b> song<span ng-if="artist.nbTitles>1">s</span><span ng-if="artist.like>0">, <b>{{artist.like}}</b> <i class="icon ion-ios-heart"></i></span></p>
+
+		            </a>
+ 		           	                   
+        </div>
+		
+      
+    </ion-content>
+  </ion-view>
+
+
+
+<!-- Template without data -->
+
+<!-- <ion-view view-title="Artists">
+    <ion-header-bar class="bar-darkgrey" style="">
+      <h1 class="title">ARTISTS</h1>
+    </ion-header-bar>
+    <div class="greyliner"></div>
+    <ion-content class="darkbg light-bg dark-border">
+
+
+            <div class="list">
+		            <a  class="item item-thumbnail-left" ng-href="#/tab/me_artist_detail">
+		                <img ng-src="../data/artworks/grey_artwork.jpg">
+		                <h2>Artist one</h2>
+		                <p><b>20 </b> songs<i class="icon ion-ios-heart"></i></p>
+
+		            </a>
+ 		            <a  class="item item-thumbnail-left" ng-href="#/tab/me_artist_detail">
+		                <img ng-src="../data/artworks/grey_artwork.jpg">
+		                <h2>Artist one</h2>
+		                <p><b>20 </b> songs<i class="icon ion-ios-heart"></i></p>
+		            </a>
+		            <a  class="item item-thumbnail-left" >
+		                <img ng-src="../data/artworks/grey_artwork.jpg">
+		                <h2>Artist one</h2>
+		                <p><b>20 </b> songs<i class="icon ion-ios-heart"></i></p>
+		            </a>		                   
+        </div>
+		
+      
+    </ion-content>
+  </ion-view> -->

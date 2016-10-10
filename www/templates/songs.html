@@ -1,0 +1,45 @@
+<ion-view view-title="Songs"  > <!-- cache-view="false" -->
+    <ion-header-bar align-title="left" class="bar-positive">
+      <div class="buttons">
+            <button class="button icon ion-navicon  button-clear" nav-direction="forward" ui-sref="settings" >
+              
+            </button>
+         
+      </div>
+      <h1 class="title">Songs</h1>
+      <div class="buttons">
+        <button class="button icon ion-ios-search  button-clear"  ui-sref="search"></button>   <!-- ui-sref="postdetail({ postID: post.id})" correct format     -->
+        <!-- href="#/settings" -->
+      </div>
+    </ion-header-bar>
+			<ion-content scroll="true" has-bouncing="true" >
+
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="refreshSongs()"></ion-refresher>   
+	        <div ng-show="!titles.length" class="empty-des text-center padding" >
+		       <!--  <div ng-class="{'object-visible': titles.length}" class="object-hidden" >   -->
+		            <div style="height: 50px"></div>
+		            <div  class="">
+		                <a class="button button-icon button-large ion-sad button-clear"></a>
+		                <div style="height: 30px"></div>
+		                <h4 class="dark">No item found</h4>
+		                <h5 class="dark ng-binding">Go to folder tab > click + button to add music folder</h5>
+		            </div>		        
+				
+			</div>
+							
+				<div style="height: 25px"></div>
+				<div class="list">
+					<div collection-repeat="title in titles" >
+						
+						<div  class="item item-song one-line"  ng-click="playTitle(title)">
+
+							<img ng-src="{{::miniaturesPath}}{{title.artwork}}" />
+							<h2>{{title.name}}</h2>
+							<button class="button button-icon ion-more" ng-click="showPopover($event,title)" ></button>
+						</div>
+					</div>
+				</div>
+<div style="height: 80px"></div>		
+
+			</ion-content>
+</ion-view>

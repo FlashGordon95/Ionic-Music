@@ -1,0 +1,53 @@
+<ion-view view-title="Manage Directories">
+    <ion-header-bar  class="bar-positive">
+<!--         <div class="buttons">
+                <button class="button icon ion-android-arrow-back  button-clear"  ng-click="$ionicGoBack()"></button>
+          </div> -->
+      <div class="buttons">
+            <button class="button icon ion-navicon  button-clear"  nav-direction="forward" ui-sref="settings" >
+              
+            </button>
+         
+      </div>
+        <h1 class="title">Music folder</h1>
+        <button class="button button-icon balanced ion-android-add" ng-click="openModal()"></button>
+    </ion-header-bar >
+
+
+    <ion-content  scroll="true" class="has-header" has-bouncing="true">
+       
+        <div style="height: 25px"></div>
+        <ion-list can-swipe="true" delegate-handle="directory-list">
+            <ion-item class="item-icon-left " ng-repeat="directory in directories track by directory.fullPath" >
+               <!--  <i ng-show="!directories.length">No dir selected</i> -->
+                <i class="icon ion-folder"></i>
+                <span ng-click="ShowSwipeInfo()">{{directory.fullPath}}</span>
+                 <ion-spinner ng-if="directory.isLoading" icon="spiral"  class="spinner-energized"></ion-spinner>
+                <ion-option-button class="button-assertive"
+                    ng-click="removeDirectory(directory)">
+                    Remove
+                </ion-option-button>
+                <ion-option-button class="button-balanced"
+                    ng-click="scanDirectory(directory)">
+                    Scan
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+
+       <!--   <p ng-show="!directories.length">no vals with this directories</p> -->
+        <div ng-show="!directories.length"  >
+            <div style="height: 50px"></div>
+            <!-- ngIf: room.userList.length > 2 -->
+            
+            <!-- ngIf: room.userList.length == 2 -->
+            <div  class="">           
+                <a class="button button-icon button-large ion-sad button-clear" ></a>
+                <div style="height: 30px"></div>
+                <h4 class="dark">No Folder Selected</h4>
+                <h5 class="dark ng-binding">Press + button to add music folder</h5>
+            </div><!-- end ngIf: room.userList.length == 2 -->
+        </div>
+
+    </ion-content>
+</ion-view>
+

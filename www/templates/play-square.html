@@ -1,0 +1,40 @@
+<div class="play-square">
+             <div   id="player-box" class="player-box">
+                  <div class="player-bg" ng-style="{'background':'url('+artworksPath + player.playlist[player.playlistIndex].artwork+')'}"></div>
+
+                  <div class="detail-header player-card">
+                          <div class="player-artwork">
+                            <img class="player-img-artwork" ng-src="'+artworksPath + player.playlist[player.playlistIndex].artwork+'"/>
+                          </div>
+                          <div class=" player-title">
+                            <h4>{{player.playlist[player.playlistIndex].artist}}</h4>
+                            <p>{{player.playlist[player.playlistIndex].name}}</p>
+                          </div>
+                  </div>
+              </div>
+
+   <!--  <div class="artwork" id="artwork" ng-style="{'background':'url('+artworksPath + player.playlist[player.playlistIndex].artwork+') left','background-size':'100%'}">
+        <div class="blur"  ng-style=" {'width' : 100 - 100 * progress + '%'} ">
+        </div>
+    </div> -->
+<!-- 
+            <div>Updated position = {{position}}</div>
+            <div>!!!progress = {{progress}}</div>
+            <div>!!!rangeprogress = {{rangeprogress}}</div>
+              <div>duration = {{duration}}</div> -->
+    
+      <div class="range">    
+           <input seeker-Slider type="range" name="volume" min="0" max={{duration}} ng-model=position  ng-change="stateChanged()"/>
+      </div>
+
+ <!--    <div class="title">
+        <span class="artist">{{player.playlist[player.playlistIndex].artist}}</span>
+        <br/>
+        <span class="song">{{player.playlist[player.playlistIndex].name}}</span>
+    </div> -->
+
+
+<!--     <div class="current-time">{{position | date : 'mm:ss'}}</div>
+    <div class="total-duration">{{duration | date : 'mm:ss'}}</div> -->
+</div>
+

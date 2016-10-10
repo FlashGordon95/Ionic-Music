@@ -1,0 +1,100 @@
+<ion-view view-title="home">
+
+    <ion-header-bar class="bar-darkgrey" style="">
+  
+    <a  nav-direction="forward" class="button button-icon icon ion-gear-a" href="#/me_setting">
+</a>
+
+      <h1 class="title">HOME</h1>
+
+
+<a  nav-direction="forward"  class="button button-icon icon ion-android-search" href="#/me_search">
+</a>
+
+
+    </ion-header-bar>
+
+
+  <div class="tabs-striped tabs-top tabs-color-assertive">
+    <div class="tabs">
+      <a class="tab-item active" href="#tab/me_home">
+        
+       <span class="tabs-striped-title "> TOP</span>
+      </a>
+      <a class="tab-item" href="#/tab/me_home_added">
+       <span class="tabs-striped-title ">ADDED</span>
+        
+      </a>
+      <a class="tab-item" href="#tab/me_home_played">
+       <span class="tabs-striped-title ">PLAYED</span>
+        
+      </a>
+      <a class="tab-item" href="#tab/me_home_fav">
+       <span class="tabs-striped-title "> FAV</span>
+        
+      </a>
+    </div>
+  </div>
+
+    <ion-content has-bouncing="true"  class="darkbg light-bg dark-border">
+
+
+
+     <div style="height: 50px"></div>
+
+
+  
+ <div class="list">
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Come on done</h2>
+                <p>Duran Duran</p>
+                  <button class="button button-icon ion-more" ng-click="showPopover($event,playlist)"></button>
+            </div>
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Something wrong</h2>
+                <p>Duran Duran</p>
+                <button class="button button-icon ion-more" ></button>
+            </div>
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Rain</h2>
+                <p>Duran Duran</p>
+                <button class="button button-icon ion-more" ></button>
+            </div>
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Come on done</h2>
+                <p>Duran Duran</p>
+                <button class="button button-icon ion-more" ></button>
+            </div>
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Something wrong</h2>
+                <p>Duran Duran</p>
+                <button class="button button-icon ion-more" ></button>
+            </div>
+            <div class="item item-song two-lines"  >
+                <img  ng-src="../data/artworks/grey_artwork.jpg" />
+                <h2>Rain</h2>
+                <p>Duran Duran</p>
+                <button class="button button-icon ion-more" ></button>
+            </div>
+      </div>    
+
+
+  
+     <div class="margin-box"> 
+                      
+          <div class="empty-state">
+            <i class="empty-state-icon   ion-ios-musical-notes"></i><br>
+            <p>NO SONG</p>
+            <p>Go to setting icon > add music folder</p>
+          </div>
+ 
+      
+    </div>
+      
+    </ion-content>
+  </ion-view>

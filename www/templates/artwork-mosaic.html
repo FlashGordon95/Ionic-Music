@@ -1,0 +1,13 @@
+<div class="artwork-mosaic">
+   <!--  <div class="title">{{title}}</div> -->
+    <img ng-repeat="song in songs track by song.id" ng-src="{{miniaturesPath}}{{song.artwork}}" class="miniature">
+<!-- 
+		<div ng-repeat="song in songs track by song.id">
+		 
+		    <img ng-src="{{miniaturesPath}}{{song.artworks[0]}}" class="miniature top-left">
+		    <img ng-src="{{miniaturesPath}}{{song.artworks[1]}}" class="miniature top-right">
+		    <img ng-src="{{miniaturesPath}}{{song.artworks[2]}}" class="miniature bottom-left">
+		    <img ng-src="{{miniaturesPath}}{{song.artworks[3]}}" class="miniature bottom-right">
+		
+		</div>	 -->
+ </div>
